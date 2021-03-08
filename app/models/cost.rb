@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# class responsible for the cost data manipulation
 class Cost < ApplicationRecord
   belongs_to :deputy
 
