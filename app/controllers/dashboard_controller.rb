@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# class responsible for the project's home page
 class DashboardController < ApplicationController
   def index; end
 

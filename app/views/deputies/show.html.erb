@@ -17,7 +17,7 @@
               <div class="p-3 border bg-light text-center">
                 <strong>
                   <p>Soma de despesas </p>
-                  <p class="m-0">R$ <%= @totalCost %></p>
+                  <p class="m-0">R$ <%= @total_cost %></p>
                 </strong>
               </div>
             </div>
@@ -32,7 +32,7 @@
                   aria-controls="multiCollapseExample2"
                 >
                   <p>Valor da maior despesa </p>
-                  <p class="m-0">R$ <%= @maxCost['vlrLiquido'] %></p>
+                  <p class="m-0">R$ <%= @max_cost['vlrLiquido'] %></p>
                 </a>
               </div>
             </div>
@@ -40,8 +40,8 @@
           <div class="row col-12 my-3 mx-0 px-0">
             <div class="collapse multi-collapse w-100" id="multiCollapseExample2">
               <div class="card card-body">
-                <p><strong>Data:</strong> <%= @maxCost['datEmissao'].strftime("%D/%M/%Y às %H:%M") %></p>
-                <p><strong>Proveniente de:</strong> <%= @maxCost['txtDescricao'] %></p>
+                <p><strong>Data:</strong> <%= @max_cost['datEmissao'].strftime("%D/%M/%Y às %H:%M") %></p>
+                <p><strong>Proveniente de:</strong> <%= @max_cost['txtDescricao'] %></p>
               </div>
             </div>
           </div
