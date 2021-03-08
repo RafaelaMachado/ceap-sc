@@ -53,3 +53,4 @@ Para verificar aplicativo: link_app_heroku
 
 * Refatorar aplicação, adicionar presenter, helpers etc
 
+`bundle exec rubocop`
