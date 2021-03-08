@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   post 'upload_csv', to: 'dashboard#upload_csv'
 
-  resources :deputies
+  resources :deputies, only: %i[index show]
 end
