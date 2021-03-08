@@ -13,9 +13,6 @@ Para verificar aplicativo: link_app_heroku
 
     * Instale o yarn do npm: `sudo npm install --global yarn`
 
-    * You need to install a system package called  `libpq`something. In Arch Linux is called `libpqxx`, in Ubuntu you may also install `libpqxx-dev`.
-    * Você precisa instalar um pacote de sistema chamado `libpq`algo. No Ubuntu você também pode instalar com: `libpqxx-dev`.
-
 2. Clone e `cd` este projeto.
 
 	Sempre execute os comandos da pasta do projeto!
@@ -35,9 +32,9 @@ Para verificar aplicativo: link_app_heroku
 
 * Rails 6
 
-* Rubocop
-
 * Bootstrap
+
+* Rubocop
 
 * Heroku
 
@@ -46,11 +43,13 @@ Para verificar aplicativo: link_app_heroku
 
 * Melhorar arquitetura de dados
 
-* Testes Automatizados
+* Melhorar UI e UX
+
+* Adicionar cobertura de testes Automatizados
 
 * Filto por categorias de gastos
 
 * Filtro para busca por estado
 
-* Melhorar layout das paginas
+* Refatorar aplicação, adicionar presenter, helpers etc
 
