@@ -4,11 +4,11 @@
 class Cost < ApplicationRecord
   belongs_to :deputy
 
-  def self.totalCost
+  def self.total_cost
     sum(:vlrLiquido)
   end
 
-  def self.maxCost
+  def self.max_cost
     order('`vlrLiquido` desc').first
   end
 end

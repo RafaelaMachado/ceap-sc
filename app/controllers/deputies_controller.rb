@@ -9,7 +9,7 @@ class DeputiesController < ApplicationController
   def show
     @deputy = Deputy.find(params[:id])
     @costs = @deputy.costs
-    @total_cost = Cost.totalCost
-    @max_cost = Cost.maxCost
+    @total_cost = Cost.total_cost
+    @max_cost = Cost.max_cost
   end
 end
