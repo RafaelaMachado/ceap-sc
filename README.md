@@ -2,7 +2,7 @@
 
 Esta aplicação foi feita usando Ruby on Rails 6 com algumas gems legais!
 
-Para verificar aplicativo: link_app_heroku
+Para verificar aplicativo: https://frozen-brook-81860.herokuapp.com/
 
 
 # Etapas para executar este projeto localmente:
