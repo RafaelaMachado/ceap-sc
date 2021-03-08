@@ -2,7 +2,9 @@
 
 require 'csv'
 
+# class responsible to Dashboard
 module Dashboard
+  # class responsible to import csv doc and populate database
   class UploadCsv
     def initialize(csv)
       @csv = csv
@@ -65,17 +67,17 @@ module Dashboard
     end
 
     def create_cost!(row, deputy)
-      Cost.find_or_create_by!(
-        txtDescricao: row['txtDescricao'],
-        txtFornecedor: row['txtFornecedor'],
-        txtCNPJCPF: row['txtCNPJCPF'],
-        datEmissao: row['datEmissao'],
-        vlrLiquido: row['vlrLiquido'],
-        urlDocumento: row['urlDocumento'],
-        deputy: deputy,
-        created_at: Time.now.utc,
-        updated_at: Time.now.utc
+      hash = row.to_hash.slice(
+        :txtDescricao,
+        :txtFornecedor,
+        :txtCNPJCPF,
+        :datEmissao,
+        :vlrLiquido,
+        :urlDocumento
       )
+
+      hash.merge!({ deputy: deputy, created_at: Time.now.utc, updated_at: Time.now.utc })
+      Cost.find_or_create_by!(**hash)
     end
   end
 end
