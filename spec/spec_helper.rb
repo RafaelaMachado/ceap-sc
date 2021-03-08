@@ -93,4 +93,7 @@ RSpec.configure do |config|
   #   # test failures related to randomization by passing the same `--seed` value
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
+  config.after :all do
+    ActiveRecord::Base.subclasses.each(&:delete_all)
+  end
 end
