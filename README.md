@@ -65,3 +65,5 @@ Para verificar aplicativo: https://frozen-brook-81860.herokuapp.com/
 * Refatorar aplicação, adicionar presenter, helpers etc
 
 * Github Actions / CicleCI
+
+* Implementar tratamento de erros
