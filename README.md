@@ -32,6 +32,10 @@ Para verificar aplicativo: https://frozen-brook-81860.herokuapp.com/
 
 2. Execute o comando `bundle exec rspec` na pasta do projeto para executar os testes.
 
+3. Execute o comando `git push heroku main` na pasta do projeto para fazer deploy no heroku.
+
+4. Execute o comando `heroku restart && heroku pg:reset DATABASE --confirm frozen-brook-81860 && heroku run rake db:migrate` na pasta do projeto para reiniciar o banco de dados no heroku.
+
 
 ## Uma breve lista das ferramentas utilizadas:
 
@@ -60,3 +64,4 @@ Para verificar aplicativo: https://frozen-brook-81860.herokuapp.com/
 
 * Refatorar aplicação, adicionar presenter, helpers etc
 
+* Github Actions / CicleCI
