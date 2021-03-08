@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateDeputies < ActiveRecord::Migration[6.0]
   def change
     create_table :deputies do |t|
@@ -7,7 +9,7 @@ class CreateDeputies < ActiveRecord::Migration[6.0]
       t.string :cpf
       t.string :sgUF, limit: 2
       t.string :sgPartido, limit: 255
-      
+
       t.timestamps
     end
   end

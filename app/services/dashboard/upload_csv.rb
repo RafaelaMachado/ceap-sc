@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'csv'
 
 module Dashboard
@@ -28,7 +30,7 @@ module Dashboard
     end
 
     def create_directory
-      time_now = Time.now.strftime("%Y%m%d%H%M%S")
+      time_now = Time.now.strftime('%Y%m%d%H%M%S')
 
       csv_dir = FileUtils.mkdir_p("tmp/csv/#{time_now}/")
       csv_dir[0] + @csv.original_filename
@@ -43,10 +45,10 @@ module Dashboard
     def import_csv_data(folder_path)
       CSV.foreach(folder_path, headers: true, encoding: 'bom|utf-8', col_sep: ';') do |row|
         next if row['sgUF'] != 'SC'
-     
-          ActiveRecord::Base.transaction do
-            deputy = find_or_create_deputy!(row)
-            create_cost!(row, deputy)
+
+        ActiveRecord::Base.transaction do
+          deputy = find_or_create_deputy!(row)
+          create_cost!(row, deputy)
         end
       end
     end
