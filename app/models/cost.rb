@@ -9,6 +9,6 @@ class Cost < ApplicationRecord
   end
 
   def self.max_cost
-    order('`vlrLiquido` desc').first
+    order(vlrLiquido: :desc).first
   end
 end
