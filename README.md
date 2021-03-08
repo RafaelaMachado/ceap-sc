@@ -26,6 +26,13 @@ Para verificar aplicativo: link_app_heroku
 6. Execute o comando `rails s` e verifique  http://localhost:3000/ .
 
 
+# Extras
+
+1. Execute o comando `bundle exec rubocop` na pasta do projeto para executar o rubocop.
+
+2. Execute o comando `bundle exec rspec` na pasta do projeto para executar os testes.
+
+
 ## Uma breve lista das ferramentas utilizadas:
 
 * Ruby 2.6
@@ -53,4 +60,3 @@ Para verificar aplicativo: link_app_heroku
 
 * Refatorar aplicação, adicionar presenter, helpers etc
 
-`bundle exec rubocop`
