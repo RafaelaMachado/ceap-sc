@@ -3,8 +3,6 @@
 require 'rails_helper'
 
 RSpec.describe Dashboard::UploadCsv, type: :service do
-  
-
   context 'when the database is successfully uploaded' do
     before(:all) do
       csv = Rack::Test::UploadedFile.new('spec/fixtures/test_success.csv')
