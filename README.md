@@ -49,6 +49,8 @@ Para verificar aplicativo: https://frozen-brook-81860.herokuapp.com/
 
 * Heroku
 
+* Rspec
+
 
 ## Meus próximos passos
 
