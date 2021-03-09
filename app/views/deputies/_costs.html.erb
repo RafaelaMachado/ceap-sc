@@ -16,7 +16,9 @@
         <td><%= cost.txtDescricao %></th>
         <td><%= cost.txtFornecedor %></td>
         <td><%= cost.txtCNPJCPF %></td>
-        <td><%= cost.datEmissao.strftime("%D/%M/%Y \n %H:%M") %></td>
+        <td>
+          <%= cost.datEmissao.strftime("%d/%m/%Y\n%R") %>
+        </td>
         <td>R$ <%= cost.vlrLiquido %></td>
         <td>
           <%= link_to "Ver", cost.urlDocumento, class: "btn btn-sm btn-outline-secondary" %>
