@@ -1,6 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5006ff552e37bbfe3bf/maintainability)](https://codeclimate.com/github/RafaelaMachado/ceap-sc/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c5006ff552e37bbfe3bf/test_coverage)](https://codeclimate.com/github/RafaelaMachado/ceap-sc/test_coverage)
-
+[![Ruby](https://github.com/RafaelaMachado/ceap-sc/actions/workflows/ruby.yml/badge.svg)](https://github.com/RafaelaMachado/ceap-sc/actions/workflows/ruby.yml)
 # NOME DO PROJETO
 
 Esta aplicação foi feita usando Ruby on Rails 6 com algumas gems legais!
